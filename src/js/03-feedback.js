@@ -30,8 +30,8 @@ function onInputFormState (e) {
 function saveState() {
     const saveForm = JSON.parse(localStorage.getItem(KEY_STORAGE));
     if (saveForm) {
-        email.value = saveForm.email
-        textarea.value = saveForm.message;
+        input.value = saveForm.email
+        message.value = saveForm.message;
     }
 }
 
