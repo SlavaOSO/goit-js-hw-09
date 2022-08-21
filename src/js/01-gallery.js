@@ -3,9 +3,8 @@ import { galleryItems } from './gallery-items';
 // Change code below this line
 
 console.log(galleryItems);
-// Описан в документации
+
 import SimpleLightbox from "simplelightbox";
-// Дополнительный импорт стилей
 import "simplelightbox/dist/simple-lightbox.min.css";
 
 const gallery = document.querySelector('.gallery');
@@ -39,7 +38,7 @@ function inputGallery(markup) {
     gallery.insertAdjacentHTML('beforeend', markup);
     // gallery.innerHTML = markup;
 }
-var lightbox = new SimpleLightbox('.gallery a', { captionDelay:250 });
+var lightbox = new SimpleLightbox('.gallery a', { captionDelay: 250 });
 
 
 // Выполняй это задание в файлах 01-gallery.html и 01-gallery.js. Разбей его на несколько подзадач:
