@@ -16,10 +16,10 @@ inputGallery(createGallery);
 
 function createGalleryItemMarkup(cards) {
     return cards.map(({ description, original, preview }) => {
-        return `<li>
+        return `
         <a class="gallery__item" href="${original}">
         <img class="gallery__image" src="${preview}" alt="${description}" />
-        </a></li>`
+        </a>`
         // return `
         // <div class="gallery__item">
         //     <a class="gallery__link" href="large-image.jpg">
